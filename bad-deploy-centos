@@ -24,9 +24,9 @@ pipeline{
                 sh """
                     scp -o StrictHostKeyChecking=no target/myapp.jar adminuser@192.168.1.4:/opt/tomcat8/webapps/
 
-                    shh adminuser@192.168.1.4 /opt/tomcat8/bin/shutdown.sh
+                    ssh adminuser@192.168.1.4 /opt/tomcat8/bin/shutdown.sh
 
-                    shh adminuser@192.168.1.4 /opt/tomcat8/bin/startup.sh
+                    ssh adminuser@192.168.1.4 /opt/tomcat8/bin/startup.sh
 
                   """
                 }
