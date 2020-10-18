@@ -7,7 +7,7 @@ pipeline{
     stages{
         stage("WELCOME") {
             steps{
-                git 'https://github.com/adukdp/myweb'
+                git 'https://github.com/advkdp/simple-java-maven-app-original'
             }
             
         }
